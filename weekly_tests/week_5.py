@@ -110,7 +110,7 @@ for i in range(n+1):
 
 
 10.
-def nested_sum(n):
+def nested_sum(lst):
     total = 0
     for item in lst:
         if type(item) == list:
