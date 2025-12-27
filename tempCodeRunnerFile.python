@@ -1,0 +1,26 @@
+try:
+    file = open('class.txt','r')
+except FileNotFoundError:
+    print("File is not present")
+else:
+    print(file.read())
+    file.seek(0)
+    print(file.readline())
+    file.seek(0)
+    print(file.readlines())
+    file.close()
+ 
+ 
+try:
+    with open('class.txt','r') as file:
+        print(file.read())
+        file.seek(0)
+        print(file.readline())
+        file.seek(0)
+        print(file.readlines())
+ 
+except FileNotFoundError:
+    print("File is not present")
+
+with open('class.txt','w') as file:
+    file.write("File operations")
