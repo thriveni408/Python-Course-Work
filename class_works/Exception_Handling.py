@@ -87,7 +87,7 @@ print("rest of the code")
 try:
     a=int(input("Enter the number:"))
     try:
-        a=b/10
+        a=10/10
     except Exception as e:
         print("Error Occured:",e)
 
